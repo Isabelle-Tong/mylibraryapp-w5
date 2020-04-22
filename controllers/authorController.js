@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 // import author model
 const Author = mongoose.model("author");
 
-
+    
 // function to handle a request to get all authors
 const getAllAuthors = async (req, res) => {
-
+    
   try {
     const all_authors = await Author.find();
     return res.send(all_authors);
@@ -15,9 +15,9 @@ const getAllAuthors = async (req, res) => {
     return res.send("Database query failed");
   }
 };
-
-
-
+    
+  
+  
 
 // function to modify author by ID
 const updateAuthor = async (req, res) => {
@@ -26,7 +26,7 @@ const updateAuthor = async (req, res) => {
 
 // function to add author
 const addAuthor = async (req, res) => {
-  res.send("Working on this feature");
+ res.send("Working on this feature");
 };
 
 // function to get author by id
